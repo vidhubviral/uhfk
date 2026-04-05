@@ -2,151 +2,128 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>🔥▶️ WATCH NOW – VIRAL VIDEO 👀🔥</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle at top, #1b1b1b, #000);
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  color: #fff;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-.container {
-  width: 100%;
-  max-width: 380px;
-  background: linear-gradient(180deg, #ffffff, #f2f2f2);
-  border-radius: 16px;
-  padding: 22px;
-  text-align: center;
-  box-shadow: 0 15px 40px rgba(0,0,0,.5);
-  animation: pop .6s ease;
+.card {
+    background: #111;
+    border-radius: 20px;
+    padding: 30px;
+    width: 370px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(255,0,0,0.2);
 }
 
-@keyframes pop {
-  from { transform: scale(.9); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-.badge {
-  display: inline-block;
-  background: #ff2b2b;
-  color: #fff;
-  font-size: 12px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  margin-bottom: 10px;
-  font-weight: bold;
+.live {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 15px;
 }
 
-h1 {
-  font-size: 20px;
-  color: #111;
-  margin-bottom: 8px;
+.live span {
+    color: #ff3b3b;
+    font-weight: bold;
 }
 
-.sub {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 18px;
+.main-btn {
+    margin-top: 12px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(45deg, red, orange);
+    box-shadow: 0 5px 20px rgba(255,0,0,0.5);
+    transition: all 0.25s ease;
 }
 
-.cta {
-  display: block;
-  width: 100%;
-  padding: 16px;
-  font-size: 17px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #ff0000, #ff7a00);
-  box-shadow: 0 6px 20px rgba(255,0,0,.5);
-  animation: pulse 1.2s infinite;
+/* Hover */
+.main-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(255,0,0,0.8);
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-.cta:hover {
-  filter: brightness(1.1);
-}
-
-.fake-count {
-  margin-top: 12px;
-  font-size: 13px;
-  color: #d40000;
-  font-weight: bold;
-  animation: blink 1.4s infinite;
-}
-
-@keyframes blink {
-  0%,100% { opacity: 1; }
-  50% { opacity: .5; }
-}
-
-.note {
-  margin-top: 14px;
-  font-size: 12px;
-  color: #666;
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  h1 { font-size: 18px; }
-  .cta { font-size: 16px; padding: 14px; }
+/* Click */
+.main-btn:active {
+    transform: scale(0.96);
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-  <div class="badge"></div>
+    <h2></h2>
 
-  <h1></h1>
-  <div class="sub"></div>
+    <div class="live">
+        🔴 <span id="viewer">1.284</span> people watching now
+    </div>
 
-  <a href="https://t.co/QK5tYnvFAl" class="cta">
-    ▶️ https://cdn.videy.co/aaE05C7v1.mp4
-  </a>
-
-  <div class="fake-count">
-      <!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4703402,4,0,0,0,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4703402&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  -->
-  </div>
-
-  <div class="note">
+    <button class="main-btn" onclick="redirect(1)">PLAY VIDEO NOW</button>
+    <button class="main-btn" onclick="redirect(2)">ALTERNATIVE</button>
+    <button class="main-btn" onclick="redirect(3)">ALTERNATIVE 2</button>
     
-  </div>
 
 </div>
 
+<script>
+
+/* REDIRECT (SIMPLE) */
+function redirect(type) {
+    const links = {
+        1: "https://x-hubb.github.io/H4b5/",
+        2: "https://rungbeacon.com/wihbb85w?key=00584323454ed6c4c1f322904a45a436",
+        3: "https://videy.co/v/?id=cIbDEANk1",
+        
+    };
+    window.location.href = links[type];
+}
+
+/* FAKE VIEWER COUNTER */
+setInterval(() => {
+    let el = document.getElementById("viewer");
+    let num = parseInt(el.innerText.replace(".", ""));
+    num += Math.floor(Math.random() * 5);
+    el.innerText = num.toLocaleString("id-ID");
+}, 3000);
+
+</script>
+
+<!-- Histats tetap aman -->
+<script type="text/javascript">
+var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4712326,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); 
+hs.type = 'text/javascript'; 
+hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();
+</script>
+
 </body>
 </html>
-
